@@ -1,0 +1,91 @@
+.formation {
+  display: flex;
+  height: 330px;
+  justify-content: center;
+  margin-top: 120px;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.formation h2 {
+  color: var(--c1);
+  font-weight: 600;
+  margin: 50px 0 0 0;
+  font-size: 2.25rem;
+}
+
+.formation-card {
+  background: var(--c1);
+  position: relative;
+  padding: 20px;
+  width: 220px;
+  height: 120px;
+  border-radius: 6px;
+}
+
+.formation-card span:nth-of-type(3) {
+  display: block;
+  margin-top: 20px;
+}
+
+.formation-card p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.formation-card span {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: var(--c5);
+  font-weight: bold;
+}
+
+.formation-dec {
+  display: block;
+  position: absolute;
+  height: 45px;
+  width: 8px;
+  background: var(--d1);
+  left: -4px;
+}
+
+.flex-fix {
+  display: none;
+}
+
+@media (max-width: 1174px) {
+  .formation {
+    align-content: flex-start;
+    align-items: center;
+    margin: 0;
+  }
+  .formation h2 {
+    display: none;
+  }
+  .formation-subtitle {
+    display: block;
+    color: var(--c1);
+    font-weight: 600;
+    font-size: 2.25rem;
+    text-align: center;
+  }
+  .formation-start {
+    margin-top: 120px;
+  }
+  .formation {
+    height: 250px;
+  }
+}
+
+@media (max-width: 874px) {
+  .formation {
+    height: 440px;
+  }
+}
+
+@media (max-width: 574px) {
+  .formation {
+    height: 650px;
+  }
+}

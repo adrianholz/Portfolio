@@ -1,0 +1,22 @@
+@import url(global.css);
+@import url(header.css);
+@import url(main.css);
+@import url(services.css);
+@import url(formation.css);
+@import url(courses.css);
+@import url(skills.css);
+@import url(contact.css);
+
+:root {
+  --c1: #e9f2f1;
+  --c2: #c8d9d6;
+  --c3: #a8bfbb;
+  --c4: #8ba6a1;
+  --c5: #708c88;
+  --c6: #57736e;
+  --c7: #405955;
+  --c8: #2b403c;
+  --c9: #182624;
+  --c10: #050d0b;
+  --d1: #33eccd;
+}

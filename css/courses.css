@@ -1,0 +1,175 @@
+.courses {
+  display: grid;
+  justify-content: center;
+  position: relative;
+  grid-template-columns: 360px 360px 240px;
+  background: var(--c1);
+  grid-gap: 40px;
+}
+
+.courses h2 {
+  grid-column: 3;
+  grid-row: 1 / 3;
+  font-size: 2.25rem;
+}
+
+.course-card {
+  background: var(--c2);
+  position: relative;
+  width: 360px;
+  height: 65px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  transform-origin: center;
+}
+
+.bounce:hover {
+  animation-name: bounce;
+  animation-timing-function: ease;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(3px);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+  75% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.course-card h3,
+.course-card img,
+.course-card p,
+.course-card span {
+  margin: 0;
+}
+
+.course-card h3 {
+  font-size: 1.125rem;
+  color: var(--c10);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.course-card p {
+  font-size: 0.75rem;
+  color: var(--c8);
+}
+
+.course-card span {
+  font-size: 0.875rem;
+  color: var(--c6);
+  font-weight: 600;
+}
+
+.course-card img {
+  position: absolute;
+}
+
+.logo-up {
+  top: -10px;
+  left: 65px;
+}
+
+.logo-down {
+  top: -10px;
+  right: 65px;
+}
+
+.description-top {
+  padding: 2px 0 0 160px;
+}
+
+.description-bottom {
+  text-align: right;
+  padding: 2px 160px 0 0;
+}
+
+.title-top {
+  padding: 5px 0 0 160px;
+}
+
+.title-bottom {
+  padding: 5px 160px 0 0;
+  text-align: right;
+}
+
+.time-top {
+  text-align: center;
+  position: absolute;
+  left: 8px;
+  top: 6px;
+}
+
+.time-bottom {
+  text-align: center;
+  position: absolute;
+  right: 8px;
+  top: 6px;
+}
+
+.hours-top {
+  position: absolute;
+  font-size: 0.875rem;
+  left: 22px;
+  top: 43px;
+}
+
+.hours-bottom {
+  position: absolute;
+  font-size: 0.875rem;
+  right: 22px;
+  top: 43px;
+}
+
+.courses::before {
+  content: "";
+  height: 100px;
+  background: var(--c1);
+  position: absolute;
+  z-index: -1;
+  bottom: 140px;
+  left: 0;
+  right: 0;
+  transform: skewY(-1.5deg);
+}
+
+.courses::after {
+  content: "";
+  height: 100px;
+  background: var(--c1);
+  position: absolute;
+  z-index: -1;
+  bottom: -70px;
+  left: 0;
+  right: 0;
+  transform: skewY(1.5deg);
+}
+
+@media (max-width: 1174px) {
+  .courses {
+    display: block;
+  }
+  .course-card {
+    margin: 40px auto;
+  }
+  .courses h2 {
+    text-align: center;
+  }
+  .courses::before {
+    bottom: 430px;
+  }
+  .courses::after {
+    bottom: -50px;
+  }
+}
