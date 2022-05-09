@@ -12,6 +12,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--c1);
+  font-size: 1.5em;
 }
 
 .header-links {

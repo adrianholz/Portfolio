@@ -173,3 +173,9 @@
     bottom: -50px;
   }
 }
+
+@media (max-width: 473px) {
+  .courses::before {
+    bottom: 475px;
+  }
+}

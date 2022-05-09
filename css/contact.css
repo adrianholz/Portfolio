@@ -70,6 +70,11 @@
   font-weight: 500;
 }
 
+.copyright a {
+  color: var(--c10);
+  text-decoration: none;
+}
+
 @media (max-width: 1134px) {
   .contact {
     display: block;
